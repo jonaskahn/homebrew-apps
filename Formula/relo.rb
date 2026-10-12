@@ -14,6 +14,17 @@ class Relo < Formula
     end
   end
 
+  on_linux do
+    on_arm do
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-linux-arm64.tar.gz"
+      sha256 "<linux-arm64-sha>"
+    end
+    on_intel do
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-linux-amd64.tar.gz"
+      sha256 "<linux-amd64-sha>"
+    end
+  end
+
   def install
     check_single_install!
     quiesce_daemon!
