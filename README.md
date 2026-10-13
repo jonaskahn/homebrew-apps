@@ -2,7 +2,15 @@
 
 <img src="assets/banner.png" alt="homebrew-apps" width="640">
 
-## Apps
+`[ PRESS START ]`
+
+**Welcome to my little software arcade.**
+
+A growing Homebrew collection of apps and tools by [@jonaskahn](https://github.com/jonaskahn).<br>
+Pick an icon, visit its repo, and find your next power-up.<br>
+No coins needed. Just curiosity.
+
+## SELECT YOUR APP
 
 <table>
   <tr>
@@ -17,5 +25,7 @@
     </td>
   </tr>
 </table>
+
+`> HAVE FUN. BUILD SOMETHING._`
 
 </div>
