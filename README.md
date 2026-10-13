@@ -1,40 +1,86 @@
-# homebrew-relo
+<div align="center">
 
-Homebrew tap for [Relo](https://github.com/jonaskahn/relo).
+<img src="assets/banner.png" alt="homebrew-apps — a Homebrew tap for apps and tools, in a minimalist 8-bit style" width="800">
+
+**Small tap. More possibilities.**
+
+A growing collection of apps and tools by [@jonaskahn](https://github.com/jonaskahn), delivered through Homebrew.
+
+`[ HOMEBREW TAP ]` · `[ MAC + LINUX* ]` · `[ INSERT COMMAND ]`
+
+<sub>*Platform support depends on the individual package.</sub>
+
+</div>
+
+---
+
+## 01 / PRESS START
+
+Add the tap once:
 
 ```console
-brew tap jonaskahn/relo
-brew install jonaskahn/relo/relo
+brew tap jonaskahn/apps
 ```
 
-Start it (console at <http://127.0.0.1:10101>):
+Then install a package using `brew install jonaskahn/apps/<name>`.
+
+> **BUILD IN PROGRESS** — Relo is the first staged formula. Its release checksums are still placeholders, so installation is not ready yet. The commands below are for use once the formula is finalized.
+
+## 02 / SELECT YOUR APP
+
+| App | What it does | Platform | Status |
+| :-- | :-- | :-- | :-- |
+| [Relo](https://github.com/jonaskahn/relo) | Local proxy letting coding agents talk to any model | macOS / Linux | Staged |
+
+### Relo / install & run
 
 ```console
+brew install jonaskahn/apps/relo
 relo daemon start
 ```
 
-Upgrade (the formula stops the running daemon and frees the ports it serves
-before the new version is placed):
+Open the console at **<http://127.0.0.1:10101>**.
+
+### Relo / next level
 
 ```console
-brew upgrade jonaskahn/relo/relo
+brew upgrade jonaskahn/apps/relo
 ```
 
-If `brew uninstall` is used, stop the daemon first so the ports are freed:
+During an upgrade, the formula stops the running daemon and frees its ports before placing the new version.
+
+### Relo / save & quit
+
+Stop the daemon before uninstalling so its ports are freed. Your data stays in `~/.relo`:
 
 ```console
 relo daemon stop --force
 brew uninstall relo
 ```
 
-Remove (keeps your data in `~/.relo`, same as apt/npm):
+For Relo-managed cleanup that keeps your data:
 
 ```console
 relo uninstall --keep-data
 brew uninstall relo
 ```
 
-To delete the data too: `relo uninstall --wipe` before `brew uninstall relo`.
-Only one Relo may be installed at a time: if Relo came from the app or npm,
-use that method, or remove it completely before `brew install`.
-Do not use `brew services` — autostart is `relo autostart enable|disable`.
+To remove your data too, run `relo uninstall --wipe` before `brew uninstall relo`.
+
+> **ONE PLAYER ONLY** — Only one Relo installation may be active at a time. If you installed it through the app, npm, or another method, keep using that method or remove it completely before installing through Homebrew.
+>
+> **AUTOSTART** — Do not use `brew services`. Use `relo autostart enable` or `relo autostart disable` instead.
+
+## 03 / EXPAND THE LIBRARY
+
+Command-line packages live in [`Formula/`](Formula/). Future desktop-app casks will live in `Casks/`.
+
+Found a problem or have a suggestion? [Open an issue](https://github.com/jonaskahn/homebrew-apps/issues).
+
+---
+
+<div align="center">
+
+`> READY WHEN YOU ARE_`
+
+</div>
