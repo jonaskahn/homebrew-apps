@@ -5,23 +5,23 @@ class Relo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-darwin-arm64.tar.gz"
-      sha256 "<arm64-sha>"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.1/relo-0.1.1-darwin-arm64.tar.gz"
+      sha256 "c0c8259e1f3e899778c8e8ecd8d5d9f5f4fc1903561e5777426e119e358360f2"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-darwin-amd64.tar.gz"
-      sha256 "<amd64-sha>"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.1/relo-0.1.1-darwin-amd64.tar.gz"
+      sha256 "ac04d86313e284ac2d6bb09c712021a899c9a2732f2e7cdd0f7dbddae350db94"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-linux-arm64.tar.gz"
-      sha256 "<linux-arm64-sha>"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.1/relo-0.1.1-linux-arm64.tar.gz"
+      sha256 "cc2747f44ce899956b339b0660838c2668494cc1e32442fd81ae795aa89be379"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0/relo-0.1.0-linux-amd64.tar.gz"
-      sha256 "<linux-amd64-sha>"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.1/relo-0.1.1-linux-amd64.tar.gz"
+      sha256 "cd8244784f907509eed625d2bd05a09ca7a43fea7c781c690a9c3dd21cc60f99"
     end
   end
 
@@ -94,13 +94,12 @@ class Relo < Formula
       #{hits.uniq.map { |h| "  #{h}" }.join("\n")}
       Keep updating through that install, or remove it completely first:
         relo daemon stop --force && relo uninstall --keep-data
-      then remove its program (delete Relo.app, npm uninstall -g relo,
+      then remove its program (delete Relo.app, npm uninstall -g @jonaskahn/relo,
       apt remove relo), and run brew install again.
     EOS
   end
 
-  # Ends a daemon a previous Relo left running and frees the console and
-  # data-plane ports its config.toml names, so an upgrade or reinstall
+  # Ends a daemon a previous Relo left running and frees the port its config.toml names, so an upgrade or reinstall
   # never hands the new binary a port the old one still holds. During an
   # upgrade the linked command is the previous keg, which is what
   # recognises the running daemon. Best effort: nothing to stop is fine.
