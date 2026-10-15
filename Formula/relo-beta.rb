@@ -5,23 +5,23 @@ class ReloBeta < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.17.d00e9a2a/relo-0.1.0-beta.17.d00e9a2a-darwin-arm64.tar.gz"
-      sha256 "adf62dd6c7d7b3787d34165f12663e86adbd79fa0499d4cce04bb5edc8c9298f"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.19.453b59ee/relo-0.1.0-beta.19.453b59ee-darwin-arm64.tar.gz"
+      sha256 "9ba99a37c957dca5194d2f0182b8295c83b47f2f5ea8f93170bed6411f1d300f"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.17.d00e9a2a/relo-0.1.0-beta.17.d00e9a2a-darwin-amd64.tar.gz"
-      sha256 "5a8dda876e540da6c4e485d5cd93f43d26ed1b198848c3ba18a5c041217c9b13"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.19.453b59ee/relo-0.1.0-beta.19.453b59ee-darwin-amd64.tar.gz"
+      sha256 "f51ee39bbbffd232fc3385b44a65c17206cffe5db6f2bd6bc743edd4a0644f3f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.17.d00e9a2a/relo-0.1.0-beta.17.d00e9a2a-linux-arm64.tar.gz"
-      sha256 "6eec41d176cb36dd258bea15bd3b1de27aa83eed12ebcbed7bac9ccf14a9a747"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.19.453b59ee/relo-0.1.0-beta.19.453b59ee-linux-arm64.tar.gz"
+      sha256 "46ace635657360f15d2f3a5c6a622e9ed1f271d0d6d590c4240099098cd3f0e4"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.17.d00e9a2a/relo-0.1.0-beta.17.d00e9a2a-linux-amd64.tar.gz"
-      sha256 "120bdc8bf86a5f88e42dfb88b81bd7645f9167dc810e267cd862a384057a3a1e"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.1.0-beta.19.453b59ee/relo-0.1.0-beta.19.453b59ee-linux-amd64.tar.gz"
+      sha256 "9e528defc78e520975cd90c6d11f710000fbec4d6c5b35e5da6e1a6099688b94"
     end
   end
 
@@ -99,8 +99,7 @@ class ReloBeta < Formula
     EOS
   end
 
-  # Ends a daemon a previous Relo left running and frees the console and
-  # data-plane ports its config.toml names, so an upgrade or reinstall
+  # Ends a daemon a previous Relo left running and frees the port its config.toml names, so an upgrade or reinstall
   # never hands the new binary a port the old one still holds. During an
   # upgrade the linked command is the previous keg, which is what
   # recognises the running daemon. Best effort: nothing to stop is fine.
