@@ -5,23 +5,23 @@ class ReloBeta < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.71.f341054f/relo-0.2.3-beta.71.f341054f-darwin-arm64.tar.gz"
-      sha256 "3667446bdc311bcba0eef966f01403ac43cdc87b7e0e2ae89f20f98c27048b3d"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.72.2af092d4/relo-0.2.3-beta.72.2af092d4-darwin-arm64.tar.gz"
+      sha256 "09674abcdbc1deedf2f74279ae62e7711314b35ef46adeb3d4efe72e7680d710"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.71.f341054f/relo-0.2.3-beta.71.f341054f-darwin-amd64.tar.gz"
-      sha256 "24425569d84ca20f83548648ba775e6635181bdcd6ba016b5a94ad0badd7619b"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.72.2af092d4/relo-0.2.3-beta.72.2af092d4-darwin-amd64.tar.gz"
+      sha256 "b548bb4e8a9b836f2544a225067a88b2533dc2ec8d270ed5a923deb2756f2077"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.71.f341054f/relo-0.2.3-beta.71.f341054f-linux-arm64.tar.gz"
-      sha256 "0f3446ca521292b48727a7f406b701c77a68a4baba2f71fcccd1ceb311ff2da4"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.72.2af092d4/relo-0.2.3-beta.72.2af092d4-linux-arm64.tar.gz"
+      sha256 "91f185fa5db139c9f8fb440e4416b18fbc5cad2ddb63e0a93763576a65bdc258"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.71.f341054f/relo-0.2.3-beta.71.f341054f-linux-amd64.tar.gz"
-      sha256 "75770d59806c04cdfd5d3e78c1eb3d19309b3882d70c9bc036e82ccd3a32311d"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.3-beta.72.2af092d4/relo-0.2.3-beta.72.2af092d4-linux-amd64.tar.gz"
+      sha256 "587573fd41105ce832e14c8fada282e037be827d786efeeb3dbe5092390d4391"
     end
   end
 
