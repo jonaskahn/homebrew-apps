@@ -5,23 +5,23 @@ class Relo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.1/relo-0.2.1-darwin-arm64.tar.gz"
-      sha256 "3c4efdf8b8e9cc0e6f0663ed1ff4e767abb81c08181421200c0dc8ab55cf7f54"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.2/relo-0.2.2-darwin-arm64.tar.gz"
+      sha256 "e21394003b1469a69db61378778e5209bdab795c056af0d7f56b772e1037aa9f"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.1/relo-0.2.1-darwin-amd64.tar.gz"
-      sha256 "c6ebb823016baf123f7cbee7f0708dace5744a6bd525e754e3d69b5c623d34fd"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.2/relo-0.2.2-darwin-amd64.tar.gz"
+      sha256 "5139c196ddd97ac09a88c6956381eb693fd7f892553f50eaaf1f6d5ac51159db"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.1/relo-0.2.1-linux-arm64.tar.gz"
-      sha256 "1933eaca0bcc5c61ea5d695008dba9efa53e547f4a0614cfff8e25fd02b751c9"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.2/relo-0.2.2-linux-arm64.tar.gz"
+      sha256 "17e4feea4835033c96c8bc82f8a05c2c2a32557d4fdc0090b4ca8e3f67a7ba84"
     end
     on_intel do
-      url "https://github.com/jonaskahn/relo/releases/download/v0.2.1/relo-0.2.1-linux-amd64.tar.gz"
-      sha256 "65009b3829b2ec21c4eaf59212c75f3415cc171275563be95d5f4af991bd2dc9"
+      url "https://github.com/jonaskahn/relo/releases/download/v0.2.2/relo-0.2.2-linux-amd64.tar.gz"
+      sha256 "946e4ba6a035e29e6cfff9358a8e4dcb459cb4078dc5fa732f3f97414075c746"
     end
   end
 
